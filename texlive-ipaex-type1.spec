@@ -1,12 +1,12 @@
-# revision 30557
+# revision 31927
 # category Package
 # catalog-ctan /fonts/ipaex-type1
-# catalog-date 2013-05-18 17:41:16 +0200
+# catalog-date 2013-10-17 13:39:26 +0200
 # catalog-license other-free
-# catalog-version 0.3a
+# catalog-version 0.3b
 Name:		texlive-ipaex-type1
-Version:	0.3a
-Release:	1
+Version:	0.3b
+Release:	2
 Summary:	IPAex fonts converted to Type-1 format Unicode subfonts
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/fonts/ipaex-type1
@@ -883,6 +883,8 @@ the CJK package. Font conversion was done with ttf2pt1.
 %doc %{_texmfdistdir}/doc/fonts/ipaex-type1/c70ipxga.fdx
 %doc %{_texmfdistdir}/doc/fonts/ipaex-type1/c70ipxm.fdx
 %doc %{_texmfdistdir}/doc/fonts/ipaex-type1/c70ipxma.fdx
+%doc %{_texmfdistdir}/doc/fonts/ipaex-type1/sample-ipaex-type1.pdf
+%doc %{_texmfdistdir}/doc/fonts/ipaex-type1/sample-ipaex-type1.tex
 
 #-----------------------------------------------------------------------
 %prep
