@@ -6,7 +6,7 @@
 # catalog-version 0.3b
 Name:		texlive-ipaex-type1
 Version:	0.3b
-Release:	5
+Release:	6
 Summary:	IPAex fonts converted to Type-1 format Unicode subfonts
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/fonts/ipaex-type1
