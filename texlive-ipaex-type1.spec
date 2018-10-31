@@ -1,6 +1,6 @@
 Name:		texlive-ipaex-type1
 Version:	0.4a
-Release:	1
+Release:	2
 Summary:	IPAex fonts converted to Type-1 format Unicode subfonts
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/fonts/ipaex-type1
