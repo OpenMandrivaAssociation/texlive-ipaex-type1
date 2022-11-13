@@ -1,12 +1,12 @@
 Name:		texlive-ipaex-type1
-Version:	0.4a
-Release:	2
+Version:	47700
+Release:	1
 Summary:	IPAex fonts converted to Type-1 format Unicode subfonts
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/fonts/ipaex-type1
 License:	OTHER-FREE
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/ipaex-type1.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/ipaex-type1.doc.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/ipaex-type1.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/ipaex-type1.doc.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -18,15 +18,16 @@ subfonts in Type1 format, which is most suitable for use with
 the CJK package. Font conversion was done with ttf2pt1.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
+%{_texmfdistdir}/fonts/enc/dvips/ipaex-type1
 %{_texmfdistdir}/fonts/map/dvips/ipaex-type1
 %{_texmfdistdir}/fonts/tfm/public/ipaex-type1
 %{_texmfdistdir}/fonts/type1/public/ipaex-type1
@@ -35,7 +36,7 @@ the CJK package. Font conversion was done with ttf2pt1.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1
+%autosetup -p1 -c -a1
 
 %build
 
